@@ -1,0 +1,11 @@
+% Import with ```\input{utilities\new-commands}```
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\newcommand{\OpenDyslexic}[1]{
+    {
+        \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+        \setmainfont{OpenDyslexic}
+        \fontsize{24}{26}\selectfont\setstretch{0.5}
+        #1
+    }
+}
