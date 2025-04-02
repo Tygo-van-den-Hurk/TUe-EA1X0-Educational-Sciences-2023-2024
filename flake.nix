@@ -1,5 +1,5 @@
 {
-  description = "The flake that is used add the C compiler to a dev shell, and deterministically build and check.";
+  description = "The flake that Compiles the latex documents.";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
