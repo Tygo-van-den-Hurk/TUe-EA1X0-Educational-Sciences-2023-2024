@@ -22,7 +22,7 @@
 
       checks.default = self.packages.${system}.default;
 
-      #| ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Nix Develop ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ |#
+      #| ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Nix Develop ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ |#
 
       devShells.default = pkgs.mkShell {
         
@@ -56,9 +56,10 @@
             runHook preInstall
 
             mkdir --parents $out/doc
-            cp ${self.packages.${system}.assignment-1}/share/doc/assignment-1.pdf $out/doc
-            cp ${self.packages.${system}.assignment-2}/share/doc/assignment-2.pdf $out/doc
-            cp ${self.packages.${system}.peer-review}/share/doc/peer-review.pdf $out/doc
+            cp ${self.packages.${system}.assignment-1}/share/doc/*.pdf $out/doc
+            cp ${self.packages.${system}.assignment-2}/share/doc/*.pdf $out/doc
+            cp ${self.packages.${system}.final-report}/share/doc/*.pdf $out/doc
+            cp ${self.packages.${system}.peer-review}/share/doc/*.pdf $out/doc
             
             runHook postInstall
           '';
@@ -127,7 +128,7 @@
             runHook preInstall
 
             mkdir --parents $out/doc
-            mv ./main.pdf $out/doc/assignment-1.pdf
+            mv ./main.pdf $out/doc/final-report.pdf
             
             runHook postInstall
           '';
