@@ -1,5 +1,5 @@
 \documentclass{article}
-% ------------------------------------------------------------------------------
+
 \usepackage{amsmath, amsthm, amssymb, amsfonts}
 \usepackage{thmtools}
 \usepackage{graphicx}
@@ -14,7 +14,9 @@
 \usepackage{tcolorbox}
 \usepackage{enumitem}
 \usepackage{orcidlink}
-% ------------------------------------------------------------------------------
+
+%| ----------------------------------------------------------------------------------------------------------------- |%
+
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 \newcommand{\OpenDyslexic}[1]{
     {
@@ -24,27 +26,14 @@
         #1
     }
 }
-% ------------------------------------------------------------------------------
-\colorlet{LightGray}{White!90!Periwinkle}
-\colorlet{LightOrange}{Orange!15}
-\colorlet{LightGreen}{Green!15}
-\definecolor{creme}{RGB}{255, 253, 208}
-% ------------------------------------------------------------------------------
-\declaretheoremstyle[name=Theorem,]{thmsty}
-\declaretheorem[style=thmsty,numberwithin=section]{theorem}
-\tcolorboxenvironment{theorem}{colback=LightGray}
-% ------------------------------------------------------------------------------
-\declaretheoremstyle[name=Proposition,]{prosty}
-\declaretheorem[style=prosty,numberlike=theorem]{proposition}
-\tcolorboxenvironment{proposition}{colback=LightOrange}
-% ------------------------------------------------------------------------------
-\declaretheoremstyle[name=Principle,]{prcpsty}
-\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
-\tcolorboxenvironment{principle}{colback=LightGreen}
-% ------------------------------------------------------------------------------
+
+%| ----------------------------------------------------------------------------------------------------------------- |%
+
 \setstretch{1.2}
 \geometry{ textheight=9in, textwidth=5.5in, top=1in, headheight=12pt, headsep=25pt, footskip=30pt }
-% ------------------------------------------------------------------------------
+
+%| ----------------------------------------------------------------------------------------------------------------- |%
+
 \title{ 
     \normalsize 
     \textsc{} \\
@@ -65,25 +54,32 @@
     \textbf{Tygo van den Hurk}\,\orcidlink{0009-0003-4182-5076}\textit{(1705709)} \and
     \textbf{Rik Janssen} \textit{(1662198)}
 }
-% ------------------------------------------------------------------------------
+
+%| ----------------------------------------------------------------------------------------------------------------- |%
+
 \begin{document}
-    % --------------------------------------------------------------------------
-    % Cover Page
-    % --------------------------------------------------------------------------
-    \pagenumbering{gobble}
-    \maketitle 
+    
+    %| ------------------------------------------------------------------------------------------------------------- |%
+    %|                                                  Cover Page                                                   |%
+    %| ------------------------------------------------------------------------------------------------------------- |%
+    
+    \maketitle
+    \thispagestyle{empty}
     \newpage
-    % --------------------------------------------------------------------------
-    % Table of Contents
-    % --------------------------------------------------------------------------
-    \clearpage
+    
+    %| ------------------------------------------------------------------------------------------------------------- |%
+    %|                                               Table of Contents                                               |%
+    %| ------------------------------------------------------------------------------------------------------------- |%
+    
+    \renewcommand{\contentsname}{Inhoudsopgave}
     \tableofcontents
-    \clearpage
+    \thispagestyle{empty}
     \newpage
-    \pagenumbering{arabic} 
-    % --------------------------------------------------------------------------
+
+    %| ------------------------------------------------------------------------------------------------------------- |%
+
     \section{Gezamelijk gedeelte}
-    % --------------------------------------------------------------------------
+
         \subsection{Voorbereiding}
             \textbf{Bekijk de les in zijn geheel en beschrijf wat de beoogde leerdoelen van deze les waren en welke leerinhouden er aan bod kwamen (gebruik de bijeenkomst over het curriculum). Je weet dit natuurlijk niet 100\% zeker wanneer het niet je eigen les is; je mag interpreteren wat je denkt dat de beoogde leerdoelen waren.}
             \begin{enumerate}[label=(\alph*)]
@@ -105,7 +101,7 @@
                     \end{itemize}
             \end{enumerate}
         \newpage
-        % ----------------------------------------------------------------------
+    
         \subsection{Analyse specifieke fragmenten}
             \textbf{Ga na welke soorten lessituaties in de les aan de orde kwamen (bijv. instructie, zelfwerkzaamheid, samenwerken, nabespreken, etc.). Kies 3 verschillende lessituaties uit die de kern van de les weergeven en beschrijf voor elk fragment (fasen in de les): } \\
             De onderdelen zijn als volgt:
@@ -135,16 +131,21 @@
                         \item Tijdens het zelfstandig werken is vooral behaviorisme te zien. De leerling leert over de nieuwe stof door te doen en te herhalen (Hendrickx, z.d.-b, Leertheorieën: behaviorisme en cognitivisme). De leerling moet zelf aan de opdrachten werken. Door het maken van meerdere opdrachten, krijgt de leerling meer inzicht in welke situaties kunnen leiden tot het gebruiken van de stelling van Pythagoras. Dit versterkt de verbinding tussen de neuronen van deze mogelijke stimuli en de stelling van Pythagoras. De docent is echter nog aanwezig voor feedback en hulp, wat ook voor een deel cognitivisme kan zijn. Ook overleg met andere leerlingen kan gezien worden als het gebruiken van de leeromgeving voor het verwerken van stof. 
                     \end{enumerate}
             \end{enumerate}
-        \textbf{Let op}:
-        \begin{itemize}
-            \item \textit{Indien de docent bijv. steeds instructie geeft, knip dit dan op in drie fragmenten.}
-            \item \textit{Koppel wat je ziet steeds aan de theorie: hoe duid je wat je ziet in de praktijk aan de hand van de theorie?}
-        \end{itemize}
+    
+    \textbf{Let op}:
+    \begin{itemize}
+        \item \textit{Indien de docent bijv. steeds instructie geeft, knip dit dan op in drie fragmenten.}
+        \item \textit{Koppel wat je ziet steeds aan de theorie: hoe duid je wat je ziet in de praktijk aan de hand van de theorie?}
+    \end{itemize}
+
     \newpage
-    % ------------------------------------------------------------------------------
+    
+    %| ------------------------------------------------------------------------------------------------------------- |%
+
     \section{Individueel gedeelte}
-    % ------------------------------------------------------------------------------
+
         \subsection{Evaluatie, advies en literatuurlijst}
+
             \subsubsection{Tygo}
                 \textbf{Evalueer wat er gebeurde in de les en onderbouw dit met theorie. Baseer je evaluatie op de lessituaties die je in opdracht 2 hebt geanalyseerd. Gebruik daarbij de volgende aandachtspunten: }
                 \begin{enumerate}[label=(\alph*)]
@@ -166,7 +167,7 @@
                         \item Monitor de voortgang van individuele leerlingen en bied indien nodig differentiatie aan om tegemoet te komen aan verschillende leerbehoeften in de klas.
                     \end{itemize}
                 \newpage
-            % ----------------------------------------------------------------------
+            
             \subsubsection{Rik}
                 \textbf{Evalueer wat er gebeurde in de les en onderbouw dit met theorie. Baseer je evaluatie op de lessituaties die je in opdracht 2 hebt geanalyseerd. Gebruik daarbij de volgende aandachtspunten: }
                 \begin{enumerate}[label=(\alph*)]
@@ -188,20 +189,24 @@
                     \item Gebruik meerdere werkvormen. Er wordt voor het ophalen van voorkennis en de uitleg nu gebruik gemaakt van bijna dezelfde werkvorm, namelijk het maken van een voorbeeldopgave samen met de klas. Laat de klas wellicht eerst samen overleggen voordat er begonnen wordt met het ophalen van voorkennis, zodat de klas deze voorkennis samen kan ophalen en de docent vervolgens al deze voorkennis kan koppelen aan de nieuwe stof.
                     \item De les bevatte veel "droge stof". Maak de voorbeeldopgaves iets interessanter door ze herkenbaarder te maken voor de leerlingen. 
                 \end{itemize}
-            \newpage
-            % ----------------------------------------------------------------------
-            % Litratuur lijst
-            % ----------------------------------------------------------------------
-            \section{Literatuurlijst}
-                Maak hier een lijst van de bronnen die je hebt gebruikt om je analyse, evaluatie en conclusies te onderbouwen (dus de gebruikte bronnen in zowel het gezamenlijke als het individuele deel).
-                \begin{itemize}
-                    \item Ertmer, P. A.,$\And$Newby, T. J. (1993). Behaviorism, cognitivism, constructivism: Comparing critical features from an instructional design perspective. \textit{Performance Improvement Quarterly, 6}(4), 50–72. https://doi.org/10.1111/j.1937-8327.1993.tb00605.x
-                    \item Hendrickx, M. (z.d.). \textit{Leertheorieën: behaviorisme en cognitivisme} [Presentatieslides]. TU/e.
-                    \item Hendrickx, M. (z.d.). \textit{Scaffolding, Feedback en Toetsen (werkvormen)} [Presentatieslides]. TU/e.
-                    \item Hendrickx, M. (z.d.). \textit{Motivatie en aansturen van leren} [Presentatieslides]. TU/e.
-                    \item Hendrickx, M. (z.d.). \textit{Leertheorieën, leeractivteiten$\And$diep leren} [Presentatieslides]. TU/e.
-                    \item Hendrickx, M. (z.d.). \textit{Constructive alignment en het curriculair spinnenweb} [Presentatieslides]. TU/e.
-                    \item Vermunt, J. D.,$\And$Verloop, N. (1999). Congruence and friction between learning and teaching. \textit{Learning and Instruction, 9}(3), 257–280. https://doi.org/10.1016/s0959-4752(98)00028-0
-                \end{itemize}
-            % ----------------------------------------------------------------------
+                \newpage
+    
+    %| ------------------------------------------------------------------------------------------------------------- |%
+    %|                                                Litratuur lijst                                                |%
+    %| ------------------------------------------------------------------------------------------------------------- |%
+
+    \section{Literatuurlijst}
+        Maak hier een lijst van de bronnen die je hebt gebruikt om je analyse, evaluatie en conclusies te onderbouwen (dus de gebruikte bronnen in zowel het gezamenlijke als het individuele deel).
+        \begin{itemize}
+            \item Ertmer, P. A.,$\And$Newby, T. J. (1993). Behaviorism, cognitivism, constructivism: Comparing critical features from an instructional design perspective. \textit{Performance Improvement Quarterly, 6}(4), 50–72. https://doi.org/10.1111/j.1937-8327.1993.tb00605.x
+            \item Hendrickx, M. (z.d.). \textit{Leertheorieën: behaviorisme en cognitivisme} [Presentatieslides]. TU/e.
+            \item Hendrickx, M. (z.d.). \textit{Scaffolding, Feedback en Toetsen (werkvormen)} [Presentatieslides]. TU/e.
+            \item Hendrickx, M. (z.d.). \textit{Motivatie en aansturen van leren} [Presentatieslides]. TU/e.
+            \item Hendrickx, M. (z.d.). \textit{Leertheorieën, leeractivteiten$\And$diep leren} [Presentatieslides]. TU/e.
+            \item Hendrickx, M. (z.d.). \textit{Constructive alignment en het curriculair spinnenweb} [Presentatieslides]. TU/e.
+            \item Vermunt, J. D.,$\And$Verloop, N. (1999). Congruence and friction between learning and teaching. \textit{Learning and Instruction, 9}(3), 257–280. https://doi.org/10.1016/s0959-4752(98)00028-0
+        \end{itemize}
+
+    %| ------------------------------------------------------------------------------------------------------------- |%
+
 \end{document}
