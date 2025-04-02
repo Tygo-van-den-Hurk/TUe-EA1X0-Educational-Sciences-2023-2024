@@ -51,13 +51,26 @@
 > Since this course is given in dutch, and all assignments need to be made in dutch this entire repository is written in dutch.
 
 # Educational Sciences
-This course will teach you more about how to be a teacher.
+Onderwijskunde 1 heeft betrekking op leren en lesgeven, oftewel het aansturen van leren. Studenten maken zich onderwijskundige theorieën en inzichten eigen op het gebied van docentgedrag en leergedrag van leerlingen en ontwikkelen een onderzoekende en lerende houding ten aanzien hiervan. 
+
+De volgende leerdoelen komen aan bod:
+ 
+- Basistheorieën uit de onderwijskundige literatuur kunnen uitleggen en video’s en beschrijvingen van concrete lessituaties kunnen analyseren. Basistheorieën hebben betrekking op:
+  - Orde houden
+  - Interpersoonlijk docentgedrag
+  - Leertheorieën
+  - Motivatie
+  - Leeractiviteiten
+  - Aansturen van leren
+  - Bijdragen aan de sociale ontwikkeling van adolescenten (inclusief pestgedrag)
+- Concrete aanbevelingen kunnen formuleren voor anderen (en indien van toepassing ook voor jezelf) in casussen, op basis van de basistheorieën.
+- Een visie formuleren op de eigen rol als docent in het leerproces van de leerlingen, inclusief de pedagogische opdracht die docent en school hebben in de maatschappij.
 
 ## Assignments
-There are two assignments, and a couple parts:
+Er zijn in totaal 4 opdrachten:
 - [Assignment 1](./assignment-1/README.md)
 - [Assignment 2](./assignment-2/README.md)
 - [Final Report](./final-report/README.md)
 - [Peer Review](./peer-review/README.md)
 
-To learn more click their respective links.
+klik de links voor meer informatie.
