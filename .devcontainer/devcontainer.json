@@ -1,0 +1,23 @@
+{
+  "name": "operating-systems-devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "features": {
+    "ghcr.io/devcontainers/features/nix:1": {
+      "multiUser": false,
+      "packages": "nixd,nixfmt-unstable",
+      "extraNixConfig": "experimental-features = nix-command flakes,sandbox = true"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "jnoortheen.nix-ide"
+      ],
+      "settings": {
+        "nix.formatterPath": "nixfmt-rfc-style",
+        "nix.enableLanguageServer": true,
+        "nix.serverPath": "nixd"
+      }
+    }
+  }
+}
