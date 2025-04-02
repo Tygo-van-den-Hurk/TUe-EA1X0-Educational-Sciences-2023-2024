@@ -13,9 +13,22 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tcolorbox}
 \usepackage{enumitem}
+\usepackage{orcidlink}
 % ------------------------------------------------------------------------------
-\input{utilities/new-commands}
-\input{utilities/new-colors}
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\newcommand{\OpenDyslexic}[1]{
+    {
+        \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+        \setmainfont{OpenDyslexic}
+        \fontsize{24}{26}\selectfont\setstretch{0.5}
+        #1
+    }
+}
+% ------------------------------------------------------------------------------
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+\definecolor{creme}{RGB}{255, 253, 208}
 % ------------------------------------------------------------------------------
 \declaretheoremstyle[name=Theorem,]{thmsty}
 \declaretheorem[style=thmsty,numberwithin=section]{theorem}
@@ -30,45 +43,44 @@
 \tcolorboxenvironment{principle}{colback=LightGreen}
 % ------------------------------------------------------------------------------
 \setstretch{1.2}
-\geometry{
-    textheight=9in,
-    textwidth=5.5in,
-    top=1in,
-    headheight=12pt,
-    headsep=25pt,
-    footskip=30pt}
+\geometry{ textheight=9in, textwidth=5.5in, top=1in, headheight=12pt, headsep=25pt, footskip=30pt }
+% ------------------------------------------------------------------------------
+\title{ 
+    \normalsize 
+    \textsc{} \\
+    [2.0cm]
+    \HRule{1.5pt} \\
+    \LARGE \textbf{
+        \uppercase{
+            Educational sciences}
+    \HRule{2.0pt} \\ 
+    [0.6cm] 
+    \LARGE{
+        Lesanalyse rondom interpersoonlijk leraarsgedrag} 
+    \vspace*{
+        10\baselineskip}}
+}
+\date{\today}
+\author{
+    \textbf{Tygo van den Hurk}\,\orcidlink{0009-0003-4182-5076}\textit{(1705709)} \and
+    \textbf{Rik Janssen} \textit{(1662198)}
+}
 % ------------------------------------------------------------------------------
 \begin{document}
     % --------------------------------------------------------------------------
-    % Cover Page and ToC
+    % Cover Page
     % --------------------------------------------------------------------------
-    \title{ 
-        \normalsize 
-        \textsc{} \\
-        [2.0cm]
-        \HRule{1.5pt} \\
-        \LARGE \textbf{
-            \uppercase{
-             Educational sciences}
-        \HRule{2.0pt} \\ 
-        [0.6cm] 
-        \LARGE{
-            Lesanalyse leeractiviteiten} 
-        \vspace*{
-            10\baselineskip}}}
-    \date{}
-    \author{
-        \textbf{Tygo van den Hurk} \textit{(1705709)}\textbf{, \& Rik Janssen} 
-        \textit{(1662198)} \\ 
-        \\
-        9 October 2023}
-    \maketitle
+    \pagenumbering{gobble}
+    \maketitle 
     \newpage
     % --------------------------------------------------------------------------
     % Table of Contents
     % --------------------------------------------------------------------------
+    \clearpage
     \tableofcontents
+    \clearpage
     \newpage
+    \pagenumbering{arabic} 
     % --------------------------------------------------------------------------
     \section{Gezamelijk gedeelte}
     % --------------------------------------------------------------------------
@@ -76,7 +88,6 @@
             \textbf{Bekijk de les in zijn geheel en beschrijf wat de beoogde leerdoelen van deze les waren en welke leerinhouden er aan bod kwamen (gebruik de bijeenkomst over het curriculum). Je weet dit natuurlijk niet 100\% zeker wanneer het niet je eigen les is; je mag interpreteren wat je denkt dat de beoogde leerdoelen waren.}
             \begin{enumerate}[label=(\alph*)]
                 \item \textbf{Wat waren de beoogde leerdoelen?} \\
-
                     De beoogde leerdoelen van deze les waren:
                     \begin{itemize}
                         \item \textbf{het begrip van de stelling van Pythagoras}, er werd een korte introductie gemaakt met wat de leerlingen wisten over pytagoras en wat ze daaruit konden afleiden. Ook werd er een korte herhaling gemaakt van de voorkennis die de leerlingen beschikte over hoeken, afstanden, en figuren.
@@ -84,9 +95,7 @@
                         \item \textbf{het toepassen van formules}, ze kregen uitleg over hoe de stelling van Pythagoras werkte en hoe je hem moest toepassen. Dit werd daarna geoefend in de opdracht die klassicaal gemaakt werd.                        
                         \item \textbf{het ontwikkelen van probleemoplossende vaardigheden}, naar mijn mening gaf de juf de leerlingen de kans het probleem op te lossen en probeerde ze zoveel mogelijk hun het probleem dat ze had opgesteld op te laten lossen.
                     \end{itemize}
-                     
                 \item \textbf{Welke leerinhouden kwamen aan bod?} \\
-
                     De leerinhouden die aan bod kwammen waaren vooral de lesdoelen zelf, dus:
                     \begin{itemize}
                         \item \textbf{De stelling van Pythagoras}, deze werd vrijwel meteen geintroduceerd toen de les begon doormiddel van te vragen wat de leerlingen er al van wisten, en doormiddel van herhaling van de voorkennis.
@@ -94,71 +103,44 @@
                         \item \textbf{Het toepassen van formules} was vrijwel geheel de les aan bod. Gezien de opdracht was om de zijdens te berekenen moesten de leerlingen de hierboven genoemende stelling van Pythagoras gebruiken. Hierdoor waren er vele momenten waarop ze de formules hebben toegepast.
                         \item \textbf{het ontwikkelen van probleemoplossende vaardigheden}, doordat de leerlingen deze opdrachten nog niet gedaan hadden, en ook nog geen ervaring hadden met de nieuwe stof, moesten ze hun probleemoplossende vaardigheden gebruiken om het probleem op te lossen.
                     \end{itemize}
-                    
             \end{enumerate}
         \newpage
         % ----------------------------------------------------------------------
         \subsection{Analyse specifieke fragmenten}
-            \textbf{Ga na welke soorten lessituaties in de les aan de orde kwamen (bijv. instructie, zelfwerkzaamheid, samenwerken, nabespreken, etc.). Kies 3 verschillende lessituaties uit die de kern van de les weergeven en beschrijf voor elk fragment (fasen in de les): }
-            %
-            \\\bigskip\\\bigskip
+            \textbf{Ga na welke soorten lessituaties in de les aan de orde kwamen (bijv. instructie, zelfwerkzaamheid, samenwerken, nabespreken, etc.). Kies 3 verschillende lessituaties uit die de kern van de les weergeven en beschrijf voor elk fragment (fasen in de les): } \\
             De onderdelen zijn als volgt:
-            \begin{itemize}
-                \item 1. Voorkennis ophalen
-                \item 2. Instructie
-                \item 3. Zelfwerken/samenwerken
-            \end{itemize}
-            \\\smallskip
-            %
+            \begin{enumerate}
+                \item Voorkennis ophalen
+                \item Instructie
+                \item Zelfwerken/samenwerken
+            \end{enumerate}
+            \smallskip
             \begin{enumerate}[label=(\alph*)]
                 \item \textbf{Welke cognitieve, metacognitieve en affectieve leeractiviteiten voeren leerlingen uit? Wat vind je van de uitvoering van elke leeractiviteit door de leerlingen? (gebruik de bijeenkomst over leeractiviteiten; paper Vermunt \& Verloop 1999).} \\
-                    1. Een cognitieve leeractiviteit die te zien is als oppervlakkige leeractiviteit, is het memoriseren van voorkennis (Vermunt$\And$Verloop, 1999) over verschillende soorten driehoeken.\\
-                    Een meta-cognitieve leeractiviteit is het oriënteren, door helemaal aan het begin aan de leerlingen te vragen wat ze al weten over de stelling van Pythagoras.\\
-                    Door de kleine onderdelen die de leerlingen al begrijpen te gebruiken als bouwstenen voor de nieuwe stof, is dit niet alleen een cognitieve leeractiviteit, maar ook affectief. Doordat de leerlingen het idee hebben dat ze al veel begrijpen, worden ze meer gemotiveerd voor de nieuwe stof.\\
-                    
-                    2. Als cognitieve leeractiviteit, wordt de stof die al bekend was als voorkennis, gebruikt om tot de stelling van Pythagoras te komen. Alle kleine onderdelen worden met elkaar vebonden tot de nieuwe stof. Het stapsgewijs toepassen van alle voorkennis maakt dit een oppervlakkige leeractiviteit.\\
-                    Een meta-cognitieve leeractiviteit is het plannen van wat er in een opracht moet gebeuren. Het uit elkaar halen van de opdracht in kleinere delen, bijvoorbeeld de kleinere driehoeken in de hoeken, en het relativeren van deze driehoeken, zorgt ervoor dat de leerling van te voren kan plannen wat er nodig is om tot de oplossing te komen.
-                    Een affectieve leeractiviteit is vooral het concentreren op de opdracht en de uitleg van de docent. Aangezien de instructie in deze les, naar mijn mening, relatief lang is, is concentreren en doorzetten op dit punt erg belangrijk.\\
-                    
-                    3. Cognitief: De leerlingen gaan zelf aan de slag en zullen dus nu zelf de geleerde stof moeten toepassen in nieuwe of redelijk bekende situaties. Stof wordt nu dus concreet verwerkt, wat het een diepe leeractiviteit maakt.\\
-                    Meta-cognitief: Voorbeelden hiervan zijn het planmatig aanpakken van de opdrachten uit het boek, maar ook het gebruiken van feedback door vragen te stellen aan de docent. Er is te zien dat meerdere leerlingen vooraan de klas naar de docent komen voor vragen en ook leerlingen in de klas worden door de docent geholpen.
-                    Affectief: Er wordt nu zelfstandig gewerkt, dus zullen leerlingen zichzelf moeten motiveren. Dat is op dit punt de grootste affectieve leeractiviteit. 
-                    
+                    \begin{enumerate}[label=\arabic*.]
+                        \item Een cognitieve leeractiviteit die te zien is als oppervlakkige leeractiviteit, is het memoriseren van voorkennis (Vermunt$\And$Verloop, 1999) over verschillende soorten driehoeken. Een meta-cognitieve leeractiviteit is het oriënteren, door helemaal aan het begin aan de leerlingen te vragen wat ze al weten over de stelling van Pythagoras. Door de kleine onderdelen die de leerlingen al begrijpen te gebruiken als bouwstenen voor de nieuwe stof, is dit niet alleen een cognitieve leeractiviteit, maar ook affectief. Doordat de leerlingen het idee hebben dat ze al veel begrijpen, worden ze meer gemotiveerd voor de nieuwe stof.
+                        \item Als cognitieve leeractiviteit, wordt de stof die al bekend was als voorkennis, gebruikt om tot de stelling van Pythagoras te komen. Alle kleine onderdelen worden met elkaar verbonden tot de nieuwe stof. Het stapsgewijs toepassen van alle voorkennis maakt dit een oppervlakkige leeractiviteit. Een meta-cognitieve leeractiviteit is het plannen van wat er in een opracht moet gebeuren. Het uit elkaar halen van de opdracht in kleinere delen, bijvoorbeeld de kleinere driehoeken in de hoeken, en het relativeren van deze driehoeken, zorgt ervoor dat de leerling van te voren kan plannen wat er nodig is om tot de oplossing te komen. Een affectieve leeractiviteit is vooral het concentreren op de opdracht en de uitleg van de docent. Aangezien de instructie in deze les, naar mijn mening, relatief lang is, is concentreren en doorzetten op dit punt erg belangrijk.
+                        \item Cognitief: De leerlingen gaan zelf aan de slag en zullen dus nu zelf de geleerde stof moeten toepassen in nieuwe of redelijk bekende situaties. Stof wordt nu dus concreet verwerkt, wat het een diepe leeractiviteit maakt. Meta-cognitief: Voorbeelden hiervan zijn het planmatig aanpakken van de opdrachten uit het boek, maar ook het gebruiken van feedback door vragen te stellen aan de docent. Er is te zien dat meerdere leerlingen vooraan de klas naar de docent komen voor vragen en ook leerlingen in de klas worden door de docent geholpen. Affectief: Er wordt nu zelfstandig gewerkt, dus zullen leerlingen zichzelf moeten motiveren. Dat is op dit punt de grootste affectieve leeractiviteit. 
+                    \end{enumerate}
                 \item \textbf{Wie stuurt het leren aan? Hoe gebeurt dat? Wat is het effect op de leerlingen? Wat vind je van de aansturing? (gebruik de bijeenkomst over het aansturen van leren).} \\
-                    
-                    1. Tijdens het ophalen van de voorkennis wordt alles vooral gestuurd door de docent. Leerlingen kunnen zeker genoeg inbreng geven, maar de docent reguleert hoe de uitleg verloopt. De leerlingen weten op dit moment nog niet precies hoe de les gaat verlopen en wat de nieuwe stof wordt, waardoor de leerling ook regulatie van de docent verwacht. Dit zorgt voor congruentie. (Hendrickx, z.d., Motivatie en aansturen van leren).\\
-
-                    2. Tijdens het uitleggen van de nieuwe stof stuurt de docent nog steeds, echter tijdens het gezamelijk maken van een voorbeeld opdracht kunnen de leerlingen ook meer sturen. De docent stuurt nog altijd vooral hoe de uitleg verloopt, maar de leerlingen moeten antwoorden geven op vragen en volgende stappen zetten in de opdracht. Doordat de leerlingen zelf volgende stappen geven aan de docent, kunnen ze zelf concluderen (Vermunt$\And$Verloop, 1999) hoe een opdracht opgelost dient te worden. Wat na verloop van tijd te merken is, is dat sommige leerlingen de stof denken te begrijpen en graag zelf meer willen reguleren. Dit zorgt voor destructieve frictie, waardoor de leerlingen ook onrustiger worden en de concentratie verliezen. Tijdens het geven van een uitleg is dit een risico, maar aan de andere kant zijn er ook nog altijd leerlingen die het redelijk begrijpen of nog niet helemaal. Dit zorgt dus tegelijkertijd bij anderen ook voor congruentie en constructieve frictie. Het geven van een instructie lijkt dus iets te zijn wat niet snel voor iedereen het beste effect kan hebben.\\
-
-                    3. Tijdens het zelfstandig werken van de leerlingen is de les leerling gestuurd. De docent loopt alleen nog rond voor vragen, maar reguleert de les niet meer. Aangzien de leerling zelf wil reguleren en de docent de teugels vooral los laat, zorgt dit voor congruentie. Leerlingen die nog moeite hebben kunnen de docent vragen voor extra hulp, wat destructieve frictie voorkomt en dus ook zorgt dat het voor individuele situaties nog altijd een gedeelde aansturing van de docent kan zijn. In deze gevallen diagnostiseerd de docent vooral en geeft vervolgens hulpmiddelen aan de leerling om verder te werken.
-                    
+                    \begin{enumerate}[label=\arabic*.]
+                        \item Tijdens het ophalen van de voorkennis wordt alles vooral gestuurd door de docent. Leerlingen kunnen zeker genoeg inbreng geven, maar de docent reguleert hoe de uitleg verloopt. De leerlingen weten op dit moment nog niet precies hoe de les gaat verlopen en wat de nieuwe stof wordt, waardoor de leerling ook regulatie van de docent verwacht. Dit zorgt voor congruentie. (Hendrickx, z.d., Motivatie en aansturen van leren).
+                        \item Tijdens het uitleggen van de nieuwe stof stuurt de docent nog steeds, echter tijdens het gezamelijk maken van een voorbeeld opdracht kunnen de leerlingen ook meer sturen. De docent stuurt nog altijd vooral hoe de uitleg verloopt, maar de leerlingen moeten antwoorden geven op vragen en volgende stappen zetten in de opdracht. Doordat de leerlingen zelf volgende stappen geven aan de docent, kunnen ze zelf concluderen (Vermunt$\And$Verloop, 1999) hoe een opdracht opgelost dient te worden. Wat na verloop van tijd te merken is, is dat sommige leerlingen de stof denken te begrijpen en graag zelf meer willen reguleren. Dit zorgt voor destructieve frictie, waardoor de leerlingen ook onrustiger worden en de concentratie verliezen. Tijdens het geven van een uitleg is dit een risico, maar aan de andere kant zijn er ook nog altijd leerlingen die het redelijk begrijpen of nog niet helemaal. Dit zorgt dus tegelijkertijd bij anderen ook voor congruentie en constructieve frictie. Het geven van een instructie lijkt dus iets te zijn wat niet snel voor iedereen het beste effect kan hebben.
+                        \item Tijdens het zelfstandig werken van de leerlingen is de les leerling gestuurd. De docent loopt alleen nog rond voor vragen, maar reguleert de les niet meer. Aangzien de leerling zelf wil reguleren en de docent de teugels vooral los laat, zorgt dit voor congruentie. Leerlingen die nog moeite hebben kunnen de docent vragen voor extra hulp, wat destructieve frictie voorkomt en dus ook zorgt dat het voor individuele situaties nog altijd een gedeelde aansturing van de docent kan zijn. In deze gevallen diagnostiseerd de docent vooral en geeft vervolgens hulpmiddelen aan de leerling om verder te werken.
+                    \end{enumerate}
                 \item \textbf{Welke leertheorie(ën) zie je terug in dit deel van de les? Waarop baseer je dat? Wat vind je van deze keuze? (gebruik de bijeenkomst over leertheorie).} \\
-                    
-                    1. Hier is cognitivisme en behaviorisme te zien. Op sommige momenten, vooral als er een koppeling wordt gemaakt naar het lesdoel, zijn de leerlingen vooral passief. Dit past bij behaviorisme. Er wordt echter vooral van de leerlingen gevraagd actief mee te doen bij het ontdekken van wat de leerlingen al weten. Dit oriënteren en terughalen van informatie, past dan weer vooral bij cognitivisme. De leerling gebruikt de inbreng van de rest van de klas en de docent om voorkennis te activeren.\\
-                    
-                    2. Tijdens de uitleg is cognitivisme en behaviorisme te zien. Bij het uitleggen van bijvoorbeeld de formule $a^2 + b^2 = c^2$ wordt er vooral geprobeerd om de leerling dit in het hoofd te prenten. Het doel hiervan is dat het zien van driehoeken voor leerlingen een stimulus wordt om meteen te schakelen naar de stelling van Pythagoras. Tijdens het gezamelijk maken van een opracht, is er vooral sprake van cognitivisme. Er wordt verwacht dat de leerlingen actief meedoen en er wordt een complex proces ontdekt. Er wordt gezamelijk ontdekt hoe een leerling een probleem het beste kan oplossen van start tot eind. Dit faciliteert voor de leerling informatieverwerking van de nieuwe stof.\\
-                    
-                    3. Tijdens het zelfstandig werken is vooral behaviorisme te zien. De leerling leert over de nieuwe stof door te doen en te herhalen (Hendrickx, z.d.-b, Leertheorieën: behaviorisme en cognitivisme). De leerling moet zelf aan de opdrachten werken. Door het maken van meerdere opdrachten, krijgt de leerling meer inzicht in welke situaties kunnen leiden tot het gebruiken van de stelling van Pythagoras. Dit versterkt de verbinding tussen de neuronen van deze mogelijke stimuli en de stelling van Pythagoras. De docent is echter nog aanwezig voor feedback en hulp, wat ook voor een deel cognitivisme kan zijn. Ook overleg met andere leerlingen kan gezien worden als het gebruiken van de leeromgeving voor het verwerken van stof. 
-                    
+                    \begin{enumerate}[label=\arabic*.]
+                        \item Hier is cognitivisme en behaviorisme te zien. Op sommige momenten, vooral als er een koppeling wordt gemaakt naar het lesdoel, zijn de leerlingen vooral passief. Dit past bij behaviorisme. Er wordt echter vooral van de leerlingen gevraagd actief mee te doen bij het ontdekken van wat de leerlingen al weten. Dit oriënteren en terughalen van informatie, past dan weer vooral bij cognitivisme. De leerling gebruikt de inbreng van de rest van de klas en de docent om voorkennis te activeren.\\
+                        \item Tijdens de uitleg is cognitivisme en behaviorisme te zien. Bij het uitleggen van bijvoorbeeld de formule $a^2 + b^2 = c^2$ wordt er vooral geprobeerd om de leerling dit in het hoofd te prenten. Het doel hiervan is dat het zien van driehoeken voor leerlingen een stimulus wordt om meteen te schakelen naar de stelling van Pythagoras. Tijdens het gezamelijk maken van een opracht, is er vooral sprake van cognitivisme. Er wordt verwacht dat de leerlingen actief meedoen en er wordt een complex proces ontdekt. Er wordt gezamelijk ontdekt hoe een leerling een probleem het beste kan oplossen van start tot eind. Dit faciliteert voor de leerling informatieverwerking van de nieuwe stof.\\
+                        \item Tijdens het zelfstandig werken is vooral behaviorisme te zien. De leerling leert over de nieuwe stof door te doen en te herhalen (Hendrickx, z.d.-b, Leertheorieën: behaviorisme en cognitivisme). De leerling moet zelf aan de opdrachten werken. Door het maken van meerdere opdrachten, krijgt de leerling meer inzicht in welke situaties kunnen leiden tot het gebruiken van de stelling van Pythagoras. Dit versterkt de verbinding tussen de neuronen van deze mogelijke stimuli en de stelling van Pythagoras. De docent is echter nog aanwezig voor feedback en hulp, wat ook voor een deel cognitivisme kan zijn. Ook overleg met andere leerlingen kan gezien worden als het gebruiken van de leeromgeving voor het verwerken van stof. 
+                    \end{enumerate}
             \end{enumerate}
-        %
-        \vfil %
-        \vfil  %
-        \vfil %
-        \vfil  %
-        \vfil %
-        \vfil  %
-        \vfil %   Empty space to push the next part down to the bottom of the page
-        \vfil  %
-        \vfil %
-        \vfil  %
-        \vfil %
-        \vfil  %
-        \vfil %
-        %
-        \textit{\textbf{Let op}: Indien de docent bijv. steeds instructie geeft, knip dit dan op in drie fragmenten. \\
-        \textbf{Let op}: Koppel wat je ziet steeds aan de theorie: hoe duid je wat je ziet in de praktijk aan de hand van de theorie?}
-        \newpage
+        \textbf{Let op}:
+        \begin{itemize}
+            \item \textit{Indien de docent bijv. steeds instructie geeft, knip dit dan op in drie fragmenten.}
+            \item \textit{Koppel wat je ziet steeds aan de theorie: hoe duid je wat je ziet in de praktijk aan de hand van de theorie?}
+        \end{itemize}
+    \newpage
     % ------------------------------------------------------------------------------
     \section{Individueel gedeelte}
     % ------------------------------------------------------------------------------
@@ -167,20 +149,13 @@
                 \textbf{Evalueer wat er gebeurde in de les en onderbouw dit met theorie. Baseer je evaluatie op de lessituaties die je in opdracht 2 hebt geanalyseerd. Gebruik daarbij de volgende aandachtspunten: }
                 \begin{enumerate}[label=(\alph*)]
                     \item \textbf{Sloten de didactische werkvormen en aansturing daarvan aan bij de leerdoelen en leerinhouden? Waaruit blijkt dat?} \\
-                
                         De didactische werkvormen en de aansturing daarvan sloten grotendeels aan bij de leerdoelen en leerinhouden. Dit is te zien doordat de docent actief betrokken was bij het activeren van voorkennis over de stelling van Pythagoras en het introduceren van nieuwe concepten. Dit past bij constructivistische theorieën waarbij voorkennis wordt geactiveerd en nieuwe kennis wordt opgebouwd op basis van bestaande kennis.
-                
                     \item \textbf{In hoeverre zijn de leerdoelen bereikt? Waaraan zie je dat?} \\
-                
                         De leerdoelen lijken gedeeltelijk bereikt te zijn. Leerlingen hebben begrip getoond van de stelling van Pythagoras en hebben geoefend met het berekenen van oppervlakte/lengte en het toepassen van formules. Dit blijkt uit de manier waarop ze actief deelnamen aan de lesactiviteiten en de opdrachten hebben uitgevoerd. Echter, de ontwikkeling van probleemoplossende vaardigheden had meer nadruk kunnen krijgen.
-                
                     \item \textbf{In hoeverre is sprake van constructive alignment tussen de elementen die je hebt geobserveerd (toetsing mag je voor nu buiten beschouwing laten)?} \\
-
                         Over het algemeen was er sprake van een constructieve alignment tussen de elementen die zijn geobserveerd. De didactische werkvormen, zoals het activeren van voorkennis, het introduceren van nieuwe concepten en het oefenen met opdrachten, sloten aan bij de leerdoelen en de leerinhouden. Dit is in lijn met de principes van constructieve alignment, waarbij de lesopzet en activiteiten zijn afgestemd op de beoogde leerresultaten.
-                
                 \end{enumerate}
                 \textbf{Wat zou je de docent adviseren voor de volgende keer dat hij of zij deze les geeft? Geef zo concreet mogelijke aanbevelingen op basis van je analyse en evaluatie van de les.} \\
-                
                     Op basis van de analyse en evaluatie van de les zou ik de volgende concrete aanbevelingen doen aan de docent:
                     \begin{itemize}
                         \item Versterk de focus op het ontwikkelen van probleemoplossende vaardigheden door de leerlingen meer ruimte te geven om zelfstandig problemen op te lossen. Dit kan bijvoorbeeld worden gedaan door complexere opdrachten aan te bieden waarbij leerlingen actief moeten nadenken en strategieën moeten toepassen.
@@ -190,7 +165,7 @@
                         \item Stimuleer peer-to-peer interactie door groepswerk of discussies tussen leerlingen te bevorderen, wat kan bijdragen aan een dieper begrip van de stof en peer learning.
                         \item Monitor de voortgang van individuele leerlingen en bied indien nodig differentiatie aan om tegemoet te komen aan verschillende leerbehoeften in de klas.
                     \end{itemize}
-                % \newpage
+                \newpage
             % ----------------------------------------------------------------------
             \subsubsection{Rik}
                 \textbf{Evalueer wat er gebeurde in de les en onderbouw dit met theorie. Baseer je evaluatie op de lessituaties die je in opdracht 2 hebt geanalyseerd. Gebruik daarbij de volgende aandachtspunten: }
@@ -206,19 +181,14 @@
                     \item \textbf{In hoeverre is sprake van constructive alignment tussen de elementen die je hebt geobserveerd (toetsing mag je voor nu buiten beschouwing laten)?} \\
                 
                         Met constructive alignment bedoelt men de relatie tussen werkvorm, leerdoelen en toetsing (Hendrickx, z.d., Constructive alignment en het curriculair spinnenweb). In dit geval laten we toetsing buiten beschouwing. Zoals ik eerder onderbouwde vind ik in het algemeen dat er zeker sprake is van constructive alignment. Echter is dit ook zeer verschillend per moment. Zoals eerder onderbouwd lijkt er bijvoorbeeld in mindere mate sprake te zijn van constructive alignment tijdens het laatste deel van de instructie. Een positief punt is dat de les qua onderdelen goed verdeeld lijkt te zijn voor een positief effect op het behalen van de leerdoelen. Door de combinatie van de drie door ons geïdentificeerde delen (het ophalen van voorkennis, de instructie en het zelfstandig werken) krijgen de leerlingen genoeg kennis mee om zelf aan de slag te kunnen om de stof goed onder de knie te krijgen, zonder dat ze alles voorgekauwd krijgen. Als we dus kijken naar hoe in het algemeen over de gehele les de lesplanning en werkvormen passen bij de leerdoelen, is er zeker sprake van constructive alignment.
-                
                 \end{enumerate}
                 \textbf{Wat zou je de docent adviseren voor de volgende keer dat hij of zij deze les geeft? Geef zo concreet mogelijke aanbevelingen op basis van je analyse en evaluatie van de les.} \\
-
                 \begin{itemize}
-                        \item Zorg ervoor dat de uitleg niet te lang wordt. Het werd voor enkele leerlingen moeilijk om de concentratie vol te houden richting het einde van de uitleg. Dit kwam onder andere doordat het relatief lang duurde, maar ook doordat de leerlingen op dit moment behoefte kregen aan andere werkvormen.
-                        \item Gebruik meerdere werkvormen. Er wordt voor het ophalen van voorkennis en de uitleg nu gebruik gemaakt van bijna dezelfde werkvorm, namelijk het maken van een voorbeeldopgave samen met de klas. Laat de klas wellicht eerst samen overleggen voordat er begonnen wordt met het ophalen van voorkennis, zodat de klas deze voorkennis samen kan ophalen en de docent vervolgens al deze voorkennis kan koppelen aan de nieuwe stof.
-                        \item De les bevatte veel "droge stof". Maak de voorbeeldopgaves iets interessanter door ze herkenbaarder te maken voor de leerlingen. 
-                    \end{itemize}
-                    
-
-                    
-                % \newpage
+                    \item Zorg ervoor dat de uitleg niet te lang wordt. Het werd voor enkele leerlingen moeilijk om de concentratie vol te houden richting het einde van de uitleg. Dit kwam onder andere doordat het relatief lang duurde, maar ook doordat de leerlingen op dit moment behoefte kregen aan andere werkvormen.
+                    \item Gebruik meerdere werkvormen. Er wordt voor het ophalen van voorkennis en de uitleg nu gebruik gemaakt van bijna dezelfde werkvorm, namelijk het maken van een voorbeeldopgave samen met de klas. Laat de klas wellicht eerst samen overleggen voordat er begonnen wordt met het ophalen van voorkennis, zodat de klas deze voorkennis samen kan ophalen en de docent vervolgens al deze voorkennis kan koppelen aan de nieuwe stof.
+                    \item De les bevatte veel "droge stof". Maak de voorbeeldopgaves iets interessanter door ze herkenbaarder te maken voor de leerlingen. 
+                \end{itemize}
+            \newpage
             % ----------------------------------------------------------------------
             % Litratuur lijst
             % ----------------------------------------------------------------------
