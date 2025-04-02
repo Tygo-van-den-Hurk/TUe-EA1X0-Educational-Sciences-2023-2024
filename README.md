@@ -1,4 +1,4 @@
-> This repository will be used for the assignments of the `` course. 
+> This repository will be used for the assignments of the `EA1X0` course. 
 
 <br>
 <center>
