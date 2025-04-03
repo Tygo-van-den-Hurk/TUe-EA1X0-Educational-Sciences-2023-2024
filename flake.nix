@@ -73,7 +73,8 @@
           buildPhase = ''
             runHook preBuild 
 
-            pdflatex --halt-on-error --file-line-error --interaction=nonstopmode --output-directory=. ./main.tex
+            pdflatex --interaction=nonstopmode --file-line-error --output-directory=. ./main.tex --draftmode 1> /dev/null
+            pdflatex --interaction=nonstopmode --file-line-error --output-directory=. ./main.tex --halt-on-error
             
             runHook postBuild
           '';
@@ -96,7 +97,8 @@
           buildPhase = ''
             runHook preBuild 
 
-            pdflatex --halt-on-error --file-line-error --interaction=nonstopmode --output-directory=. ./main.tex
+            pdflatex --interaction=nonstopmode --file-line-error --output-directory=. ./main.tex --draftmode 1> /dev/null
+            pdflatex --interaction=nonstopmode --file-line-error --output-directory=. ./main.tex --halt-on-error
             
             runHook postBuild
           '';
@@ -113,13 +115,14 @@
 
         final-report = pkgs.stdenv.mkDerivation rec {
           name = "final-report";
-          src = ./final-report;
+          src = ./final-report/src;
           buildInputs = with pkgs; [ texliveFull ];
 
           buildPhase = ''
             runHook preBuild 
 
-            pdflatex --interaction=nonstopmode --output-directory=. ./src/main.tex
+            pdflatex --interaction=nonstopmode --file-line-error --output-directory=. ./main.tex --draftmode 1> /dev/null
+            pdflatex --interaction=nonstopmode --file-line-error --output-directory=. ./main.tex --halt-on-error
             
             runHook postBuild
           '';
@@ -142,7 +145,8 @@
           buildPhase = ''
             runHook preBuild 
 
-            pdflatex --halt-on-error --file-line-error --interaction=nonstopmode --output-directory=. ./main.tex
+            pdflatex --interaction=nonstopmode --file-line-error --output-directory=. ./main.tex --draftmode 1> /dev/null
+            pdflatex --interaction=nonstopmode --file-line-error --output-directory=. ./main.tex --halt-on-error
             
             runHook postBuild
           '';
