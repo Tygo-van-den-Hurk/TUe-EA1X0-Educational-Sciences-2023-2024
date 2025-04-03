@@ -1,18 +1,83 @@
 \documentclass{article}
 
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
 \usepackage[utf8]{inputenc}
-\usepackage{url} 
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage{orcidlink}
+
+%| ----------------------------------------------------------------------------------------------------------------- |%
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\newcommand{\OpenDyslexic}[1]{
+    {
+        \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+        \setmainfont{OpenDyslexic}
+        \fontsize{24}{26}\selectfont\setstretch{0.5}
+        #1
+    }
+}
+
+%| ----------------------------------------------------------------------------------------------------------------- |%
+
+\setstretch{1.2}
+\geometry{ textheight=9in, textwidth=5.5in, top=1in, headheight=12pt, headsep=25pt, footskip=30pt }
+
+%| ----------------------------------------------------------------------------------------------------------------- |%
+
+\title{ 
+    \normalsize 
+    \textsc{} \\
+    [2.0cm]
+    \HRule{1.5pt} \\
+    \LARGE \textbf{
+        \uppercase{
+            Educational sciences}
+    \HRule{2.0pt} \\ 
+    [0.6cm] 
+    \LARGE{Peer review} 
+    \vspace*{
+        10\baselineskip}}
+}
+\date{\today}
+\author{\textbf{Tygo van den Hurk}\,\orcidlink{0009-0003-4182-5076}\textit{(1705709)}}
+
+%| ----------------------------------------------------------------------------------------------------------------- |%
 
 \begin{document}
-    \title{Feedback Rik}
-    \author{Tygo van den Hurk}
+    
+    %| ------------------------------------------------------------------------------------------------------------- |%
+    %|                                                  Cover Page                                                   |%
+    %| ------------------------------------------------------------------------------------------------------------- |%
+    
     \maketitle
     \thispagestyle{empty}
-    \newpage   
-    \setcounter{page}{1}
+    \newpage
     
-    \section*{Persoonlijke achtergrond}
-        \subsection*{Wat ik gekregen heb:}
+    %| ------------------------------------------------------------------------------------------------------------- |%
+    %|                                               Table of Contents                                               |%
+    %| ------------------------------------------------------------------------------------------------------------- |%
+    
+    \renewcommand{\contentsname}{Inhoudsopgave}
+    \tableofcontents
+    \thispagestyle{empty}
+    \newpage
+
+    %| ------------------------------------------------------------------------------------------------------------- |%
+
+    \section{Persoonlijke achtergrond}
+        
+        \subsection{Wat ik gekregen heb:}
+
             {\itshape      
                 Ik ben begonnen op basisschool De Koperwiek in Venlo. Hier heb ik 8 jaar lang een erg prettige leeromgeving gehad. De school lag dicht bij mijn huis en de omgeving voelde altijd vertrouwd. Ik ben een van de gelukkigen die kan zeggen dat hij nooit last heeft gehad van pestgedrag. Ik ben me erg bewust van het geluk wat ik hiermee heb gehad, maar de school heeft hier ook zeker een rol in gespeeld. De Koperwiek was een school die veel lette op elke leerling en ook iedereen de aandacht gaf die ze nodig hadden. 
                 
@@ -28,8 +93,10 @@
 
         \bigskip
 
-        \subsection*{Mijn feedback voor jou:}
+        \subsection{Mijn feedback voor jou:}
+
             Je beschrijft je onderwijscarrière en je toekomstperspectief heel gedetailleerd en positief. Het is duidelijk dat je een sterke motivatie hebt om docent te worden en dat je al ervaring hebt opgedaan in het lesgeven, wat geweldig is. Je hebt ook benadrukt hoe belangrijk het is om duidelijk te zijn in de les structuur, wat een belangrijke vaardigheid is. Blijf dit enthousiasme en deze focus op je persoonlijke ontwikkeling behouden terwijl je je onderwijsdoelen nastreeft. Het ziet er goed uit!
+            
             Je kan opzich nog wel wat dingen beter doen. Hier zijn enkele suggesties om je verhaal nog beter te maken te maken:
             \begin{itemize}
                 \item Concretere voorbeelden: Probeer specifieke voorbeelden te geven van situaties of lessen die je hebt geleerd tijdens je tijd als zangdocent en musicaldocent. Hoe heb je omgegaan met uitdagingen en successen?
@@ -39,8 +106,10 @@
     
     \newpage
     
-    \section*{Taak van de docent}
-        \subsection*{Wat ik van jou gekregen heb:}
+    \section{Taak van de docent}
+
+        \subsection{Wat ik van jou gekregen heb:}
+
             {\itshape              
                 Docenten zijn onder leerlingen, maar ook zeker onder ouders, vaak in opspraak. Vaak gaat het dan om zaken die in mijn ogen relatief onbelangrijk zijn, of zaken die niet begrepen worden. Vaak mist het perspectief van de docent. De vraag is dan: wat zijn dan wel belangrijke zaken?
                 
@@ -59,15 +128,17 @@
 
         \bigskip
 
-        \subsection*{Mijn feedback voor jou:}
-            \subsubsection*{Positieve feedback:}
+        \subsection{Mijn feedback voor jou:}
+
+            \subsubsection{Positieve feedback:}
+
                 \begin{itemize}
                     \item Je hebt duidelijk nagedacht over de belangrijke taken van een docent en goed beschreven waarom ze belangrijk zijn.
                     \item Je benadrukt het belang van communicatie en duidelijkheid, wat essentieel is voor zowel leerlingen als ouders.
                     \item Je hebt inzichtelijk gesproken over verschillende vormen van motivatie en benadrukt het belang van langdurige motivatie.
                 \end{itemize}
                 \bigskip
-                \subsubsection*{Punten ter verbetering:}
+                \subsubsection{Punten ter verbetering:}
                 \begin{itemize}
                     \item De tekst kan worden opgesplitst in kortere alinea's voor een betere leesbaarheid.
                     \item Overweeg om voorbeelden toe te voegen om je standpunten te versterken en praktische toepassingen te illustreren.
@@ -76,8 +147,8 @@
     
     \newpage
         
-    \section*{Mijn Ideale les}
-        \subsection*{Wat ik van jou gekregen heb:}
+    \section{Mijn Ideale les}
+        \subsection{Wat ik van jou gekregen heb:}
             {\itshape             
                 Het opstellen van een ideale les vind ik lastig, daar ik vind dat er niet één ideale les bestaat. Ik zal daarom uitleggen wat voor mij een voorbeeld kan zijn van een ideale les. Ik blijf van mening dat verschillende omstandigheden om verschillende lesstructuren vragen.
                 Voor deze les ga ik uit van een situatie waarin een klas midden in een hoofdstuk zit, halverwege tussen de start van het hoofdstuk en de toets. Het betreffende vak is wiskunde.
@@ -133,14 +204,14 @@
 
         \bigskip
             
-        \subsection*{Mijn feedback voor jou:}
-            \subsubsection*{Positieve feedback:}
+        \subsection{Mijn feedback voor jou:}
+            \subsubsection{Positieve feedback:}
                 \begin{itemize}
                 \item Je hebt een gedetailleerde beschrijving gegeven van hoe een ideale les er volgens jou uitziet, inclusief de lesactiviteiten, leeromgeving en docentengedrag.
                 \item Je hebt verschillende onderwijskundige theorieën en begrippen geïntegreerd in je uitleg, wat aantoont dat je de theorie begrijpt en kunt toepassen.
                 \item Je hebt je persoonlijke ervaringen als leerling in de discussie opgenomen om je standpunt te onderbouwen, wat de tekst verrijkt.
             \end{itemize}
-            \subsubsection*{Punten ter verbetering:}
+            \subsubsection{Punten ter verbetering:}
             \begin{itemize}
                 \item Hoewel je een gedetailleerde beschrijving hebt gegeven, kan de tekst nog compacter en overzichtelijker worden gemaakt door sommige delen samen te voegen of korter te formuleren.
                 \item Het zou nuttig zijn om concrete voorbeelden te geven van hoe de theorieën die je noemt daadwerkelijk in de praktijk kunnen worden toegepast in de les. Dit zou je argumenten versterken.
@@ -149,8 +220,8 @@
 
     \newpage
 
-    \section*{Referencies}
-        \subsection*{Wat ik van jou gekregen heb:}
+    \section{Referencies}
+        \subsection{Wat ik van jou gekregen heb:}
             {\itshape      
                 \begin{itemize}
                     \item \url{https://beeldenbrein.nl/dopamine-is-nodig-om-te-leren/#:~:text=Dopamine%20is%20een%20neurotransmitter.,dopamine%20kunnen%20we%20niet%20leren.}
@@ -160,12 +231,12 @@
 
         \bigskip
 
-        \subsection*{Mijn feedback voor jou:}
-            \subsubsection*{Positieve feedback: (sorry kon maar 1 positiefs ding bedenken)}
+        \subsection{Mijn feedback voor jou:}
+            \subsubsection{Positieve feedback: (sorry kon maar 1 positiefs ding bedenken)}
                 \begin{itemize}
                 \item Je hebt er linken in staan.
             \end{itemize}
-            \subsubsection*{Punten ter verbetering:}
+            \subsubsection{Punten ter verbetering:}
             \begin{itemize}
                 \item Dit zijn niet genoeg referencies. Probeer er meer te vinden.
                 \item De linken hebben niet de juiste format. Probeer de ze tenminste een format te vinden. Zoals "Auteur, title, link" want nu weet je niks
@@ -174,7 +245,7 @@
 
     \newpage
 
-    \section*{Conclusie}
+    \section{Conclusie}
         Rik, je zal echt nog even wat moeten gaan zitten. Ik denk niet dat dit genoeg is om een voldoende te halen. Als je een voldoende haalt, is het een 5.5 en ik weet dat je beter kan dan dit. Het is op het moment dat ik dit document krijg: \textit{6 November 13:49} Je hebt nog 10 uur voor de deadline. Dat is in principe nog te fixen
                 
 \end{document}
