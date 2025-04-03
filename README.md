@@ -8,41 +8,44 @@
     <a href="https://containers.dev/">
         <img src="https://img.shields.io/badge/devcontainer-provided-green?style=flat" alt="devcontainer provided"/>
     </a>
-    <a href="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/actions/workflows/nix-github-actions.yml">
-        <img src="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/workflows/Nix%20Flake%20Checks/badge.svg?style=flat" alt="GitHub tests status" />
+    <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/actions/workflows/nix-github-actions.yml">
+        <img src="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/workflows/Nix%20Flake%20Checks/badge.svg?style=flat" alt="GitHub tests status" />
     </a>
-    <a href="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/graphs/contributors">
-        <img src="https://img.shields.io/github/contributors/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="Contributors"/>
+    <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/graphs/contributors">
+        <img src="https://img.shields.io/github/contributors/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="Contributors"/>
     </a>
-    <a href="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">
-        <img src="https://img.shields.io/github/issues/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/good%20first%20issue?style=flat" alt="Good first issues" />
+    <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">
+        <img src="https://img.shields.io/github/issues/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/good%20first%20issue?style=flat" alt="Good first issues" />
     </a>
-    <a href="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/blob/main/LICENSE">
-        <img src="https://img.shields.io/github/license/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="The Eclipse Public License v2.0 badge" />
+    <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="The Eclipse Public License v2.0 badge" />
     </a>
-    <a href="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/commit">
-        <img src="https://badgen.net/github/commits/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="GitHub commits" />
+    <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/commit">
+        <img src="https://badgen.net/github/commits/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="GitHub commits" />
     </a>
-     <a href="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/commit">
-        <img src="https://badgen.net/github/last-commit/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="GitHub latest commit" />
+     <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/commit">
+        <img src="https://badgen.net/github/last-commit/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="GitHub latest commit" />
     </a>
-    <a href="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/releases/">
-        <img src="https://img.shields.io/github/downloads/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/total.svg?style=flat" alt="GitHub latest commit" />
+    <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/releases/">
+        <img src="https://img.shields.io/github/downloads/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/total.svg?style=flat" alt="GitHub latest commit" />
     </a>
-    <a href="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/network/">
-        <img src="https://badgen.net/github/forks/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="GitHub forks" />
+    <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/network/">
+        <img src="https://badgen.net/github/forks/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="GitHub forks" />
     </a>
-    <a href="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/pulse">
-        <img src="https://img.shields.io/github/created-at/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="created at badge" />
+    <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/pulse">
+        <img src="https://img.shields.io/github/created-at/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="created at badge" />
     </a>
-    <a href="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/stargazers">
-        <img src="https://img.shields.io/github/stars/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="amount of stars" />
+    <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/stargazers">
+        <img src="https://img.shields.io/github/stars/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="amount of stars" />
     </a>
-    <a href="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/release">
-        <img src="https://img.shields.io/github/release/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat&display_name=release" alt="newest release" />
+    <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/release">
+        <img src="https://img.shields.io/github/release/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat&display_name=release" alt="newest release" />
     </a>
-    <a href="https://github.com/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/">
-        <img src="https://img.shields.io/github/languages/count/Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="amount of languages in the repository" />
+    <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/">
+        <img src="https://img.shields.io/github/languages/count/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="amount of languages in the repository" />
+    </a>  
+    <a href="https://github.com/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024/">
+        <img src="https://img.shields.io/github/repo-size/school-Tygo-van-den-Hurk/TUe-EA1X0-Educational-Sciences-2023-2024?style=flat" alt="the size of the repository" />
     </a>    
 </center>
 <br>
